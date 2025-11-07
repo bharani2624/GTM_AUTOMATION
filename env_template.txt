@@ -1,0 +1,59 @@
+# Copy this file to .env and fill in your values
+
+# Reddit API Credentials
+# Get these from: https://www.reddit.com/prefs/apps
+REDDIT_CLIENT_ID=your_reddit_client_id
+REDDIT_CLIENT_SECRET=your_reddit_client_secret
+REDDIT_USER_AGENT=GTMAutomation/1.0
+
+# AI Provider Configuration
+# Options: 'openai', 'openrouter', 'groq', 'together', 'gemini'
+# Recommended for FREE: 'gemini' or 'openrouter'
+AI_PROVIDER=gemini
+
+# OpenAI API Key (if using OpenAI)
+# Get from: https://platform.openai.com/api-keys
+OPENAI_API_KEY=your_openai_api_key
+
+# OpenRouter API Key (if using OpenRouter)
+# Get from: https://openrouter.ai/keys
+OPENROUTER_API_KEY=your_openrouter_api_key
+
+# Groq API Key (if using Groq)
+# Get from: https://console.groq.com/
+GROQ_API_KEY=your_groq_api_key
+
+# Together AI API Key (if using Together AI)
+# Get from: https://api.together.xyz/settings/api-keys
+TOGETHER_API_KEY=your_together_api_key
+
+# Google Gemini API Key (if using Gemini - RECOMMENDED FOR FREE)
+# Get from: https://makersuite.google.com/app/apikey
+GEMINI_API_KEY=your_gemini_api_key
+
+# Optional: Override default model for your provider
+# AI_MODEL=gemini-pro
+
+# Google Sheets Credentials
+# Path to your service account JSON file
+GOOGLE_SHEETS_CREDENTIALS_PATH=credentials/google_sheets_credentials.json
+# Sheet ID is in the URL: https://docs.google.com/spreadsheets/d/SHEET_ID_HERE/edit
+GOOGLE_SHEET_ID=your_google_sheet_id
+
+# Slack Webhook (Optional)
+# Get from: https://api.slack.com/messaging/webhooks
+SLACK_WEBHOOK_URL=your_slack_webhook_url
+
+# Keywords to monitor (comma-separated, no spaces after commas)
+KEYWORDS=retention marketing,Shopify growth,customer churn,growth hacking,conversion optimization
+
+# Reddit subreddits to monitor (comma-separated, no spaces after commas)
+SUBREDDITS=marketing,entrepreneur,startups,smallbusiness,shopify
+
+# ArangoDB (use this instead of Google Sheets if set)
+ARANGO_HOST=http://localhost:8529
+ARANGO_USERNAME=root
+ARANGO_PASSWORD=your_arango_password
+ARANGO_DB=gtm
+ARANGO_COLLECTION=gtm_posts
+

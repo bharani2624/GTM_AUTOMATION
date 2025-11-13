@@ -47,7 +47,7 @@ class Config:
     MAX_POST_AGE_HOURS = 72  # Only consider posts from last 72 hours
 
     # ArangoDB Configuration
-    ARANGO_HOST = "http://10.21.86.67:8529/"
+    ARANGO_HOST = "http://192.168.2.90:8529"
     ARANGO_USERNAME = "root"
     ARANGO_PASSWORD = ""
     ARANGO_DB = "gtm"

@@ -23,6 +23,7 @@ class ArangoManager:
         #         raise RuntimeError("User Arango class did not expose a 'db' attribute")
         # else:
         #     # Fallback to direct python-arango client
+
         root = ArangoClient(hosts=Config.ARANGO_HOST)
         self.db = root.db(
             Config.ARANGO_DB,

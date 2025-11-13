@@ -7,7 +7,7 @@ const app = express();
 app.use(cors()); 
 app.use(express.json());
 
-const ARANGO_HOST = "http://10.21.86.67:8529";
+const ARANGO_HOST = "http://192.168.2.90:8529/";
 const ARANGO_DB = "gtm";
 const ARANGO_USER = "root";
 const ARANGO_PASS = "";

@@ -25,6 +25,7 @@ class GTMAutomationWorkflow:
         
         # Initialize Arango/Slack only if not in dry-run
         if not self.dry_run:
+            print("arango manager")
             self.arango = ArangoManager()
             self.slack = SlackNotifier()
             # Track processed posts to avoid duplicates using DB
@@ -50,7 +51,7 @@ class GTMAutomationWorkflow:
         print("GTM Automation Workflow Started")
         print(f"Time: {datetime.now().isoformat()}")
         print("=" * 60)
-        
+        print("started")
         # Step 1: Monitor Reddit for posts
         print("\n[Step 1] Monitoring Reddit for posts...")
         posts = self.monitor.search_posts()
